@@ -21,4 +21,4 @@ Ten recorded sessions exploring how bodies scaffold conscious experience.
 - Recommended reading list and lab equipment inventory
 
 ## Access
-Request the materials by emailing studio@consciousness.project with a short note about your learning objectives. Cohort leaders receive facilitation guides and Q&A access.
+Request the materials by emailing joshua@thegavl.com with a short note about your learning objectives. Cohort leaders receive facilitation guides and Q&A access.

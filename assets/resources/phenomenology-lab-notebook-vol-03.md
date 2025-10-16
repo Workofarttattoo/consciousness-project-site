@@ -21,4 +21,4 @@ A comparative study of transitions from wakefulness into lucid dream states.
 ## Usage Notes
 - Cite as *Consciousness Project Phenomenology Lab Notebook, Vol. 03 (2025)*.
 - Respect participant consent tiers included in the metadata package.
-- Contact notebook@consciousness.project for derivative works or collaborations.
+- Contact joshua@thegavl.com for derivative works or collaborations.

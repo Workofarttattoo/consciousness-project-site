@@ -17,11 +17,11 @@ A moderated space for surfacing open problems, coordinating experiments, and sha
 ## Moderation
 - Community hosts rotate quarterly, with mini retrospective sessions.
 - Dedicated channels for safety or conduct concerns (`@hosts`
-  or `conduct@consciousness.project`).
+  or direct email to `joshua@thegavl.com`).
 
 ## Joining the Forum
 1. Complete the intake form shared after your invite request.
 2. Agree to the community charter and reciprocity guidelines.
 3. Attend a 20-minute onboarding call or watch the recorded orientation.
 
-Questions? Email forum@consciousness.project.
+Questions? Email joshua@thegavl.com.

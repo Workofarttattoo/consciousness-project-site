@@ -12,4 +12,4 @@ A cross-lab exploration of embodied attention and spatialized self-reporting.
 - JSON exports for custom visualizations
 - Facilitation notes with timing cues
 
-Email notebook@consciousness.project to request the complete dataset package.
+Email joshua@thegavl.com to request the complete dataset package.

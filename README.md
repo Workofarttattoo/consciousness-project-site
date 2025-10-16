@@ -36,15 +36,14 @@ A lightweight, static site for The Consciousness Project designed to be hosted o
 
 ### Form integrations
 
-- The forms post to FormSubmit using AJAX requests (see `index.html` and `assets/js/main.js`). Replace the placeholder emails (`support@consciousness.project`, etc.) with your own addresses and confirm them with FormSubmit to receive submissions.
+- The forms post to FormSubmit using AJAX requests (see `index.html` and `assets/js/main.js`). By default they send to `joshua@thegavl.com`; replace this with your own address and confirm it with FormSubmit to receive submissions.
 - If you prefer another provider (Mailchimp, Airtable, custom backend), update each form's `action`/`data-endpoint` attributes and adjust the fetch call in `assets/js/main.js`.
 - Remove or adapt the client-side `enhanceForm` helper if you want the browser to handle form submissions without JavaScript.
 
 ### Mailboxes
 
-- Default addresses used across the site: `j.henrix.cole@`, `admin@`, `governance@`, `support@`, and `nonprofit@` (all at `consciousness.project`).
-- To make them functional, provision mailboxes or forwarding aliases with your email provider, then verify each address with FormSubmit so submissions are delivered.
-- Update the `mailto:` links or form endpoints if you decide to route messages elsewhere.
+- All `mailto:` links route to `joshua@thegavl.com` and reference the root operations hub at `https://aios.is`.
+- If you prefer different recipients or aliases, update the `mailto:` values and the FormSubmit endpoints in `index.html`, then verify the addresses with FormSubmit.
 
 ### Resource library
 

@@ -32,4 +32,4 @@ A five-week introduction to consciousness studies for interdisciplinary teams.
 - Journal prompt cards (printable PDF)
 - Observation log template (Notion + Google Sheets)
 
-Email hello@consciousness.project for facilitator access to editable files.
+Email joshua@thegavl.com for facilitator access to editable files.
