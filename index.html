@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Consciousness Project</title>
+  <meta name="description" content="An open initiative exploring consciousness through science, philosophy, and art." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="branding">
+        <span class="logo" aria-hidden="true">◎</span>
+        <div>
+          <p class="title">The Consciousness Project</p>
+          <p class="tagline">Science × Philosophy × Creative Practice</p>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#mission">Mission</a>
+        <a href="#initiatives">Initiatives</a>
+        <a href="#community">Community</a>
+        <a href="#resources">Resources</a>
+        <a class="button" href="#newsletter">Join</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container">
+        <div class="hero-copy">
+          <h1>Exploring consciousness with rigor and imagination.</h1>
+          <p>
+            The Consciousness Project is a collaborative hub bringing together
+            researchers, creators, and curious explorers to map the frontiers of
+            subjective experience.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#newsletter">Join the project</a>
+            <a class="button secondary" href="#resources">Browse resources</a>
+          </div>
+        </div>
+        <div class="hero-card" role="presentation">
+          <p class="card-kicker">Upcoming salon</p>
+          <p class="card-title">Beyond Neural Correlates</p>
+          <p class="card-meta">May 9 · Hybrid · Hosted by Consciousness Lab</p>
+          <p class="card-body">
+            A cross-disciplinary roundtable on how phenomenology and computational
+            neuroscience can inform one another.
+          </p>
+          <button class="card-button" type="button" data-modal-target="rsvp-modal">Request invite</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="callout" id="mission">
+      <div class="container stack">
+        <h2>Mission</h2>
+        <p>
+          We cultivate an open-source knowledge commons on consciousness, support
+          novel experiments and artistic collaborations, and foster public
+          conversations that stay grounded in evidence while welcoming diverse
+          perspectives.
+        </p>
+        <div class="pillars">
+          <article>
+            <h3>Research</h3>
+            <p>Facilitate replication-ready protocols, datasets, and lab exchanges.</p>
+          </article>
+          <article>
+            <h3>Discourse</h3>
+            <p>Host salons, reading groups, and residencies that bridge disciplines.</p>
+          </article>
+          <article>
+            <h3>Creation</h3>
+            <p>Commission artworks, speculative design, and interactive experiences.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="initiatives">
+      <div class="container">
+        <h2>Current Initiatives</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Open Consciousness Atlas</h3>
+            <p>A living map of theories, experiments, and open questions curated by the community.</p>
+            <a class="link" href="#atlas">Contribute an entry</a>
+          </article>
+          <article class="card">
+            <h3>Observatory Residency</h3>
+            <p>Six-week hybrid residency pairing neuroscientists with media artists to prototype new methodologies.</p>
+            <a class="link" href="#residency">Apply for the next cohort</a>
+          </article>
+          <article class="card">
+            <h3>Phenomenology Lab Notebook</h3>
+            <p>An open journal for structured first-person reports and cross-lab comparisons.</p>
+            <a class="link" href="#lab-notebook">Read the latest volume</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="community">
+      <div class="container">
+        <div class="split">
+          <div>
+            <h2>Community Signals</h2>
+            <ul class="signal-list">
+              <li>
+                <span class="label">Research Circle</span>
+                <span class="detail">Weekly lab meeting · Thursdays 10am PT</span>
+              </li>
+              <li>
+                <span class="label">Reading Group</span>
+                <span class="detail">Integrated Information Theory series begins June 1</span>
+              </li>
+              <li>
+                <span class="label">Creative Residency</span>
+                <span class="detail">Exploring dream reports through generative film</span>
+              </li>
+            </ul>
+          </div>
+          <div class="panel">
+            <h3>Signal your interest</h3>
+            <p>Select the strands you want to follow and we will tailor updates for you.</p>
+            <form
+              class="interest-form"
+              id="interest-form"
+              action="https://formsubmit.co/community@consciousness.project"
+              method="POST"
+              data-endpoint="https://formsubmit.co/ajax/community@consciousness.project"
+              data-success-message="Invitation confirmed. Expect a personal introduction soon."
+              data-error-message="We could not save your request. Please retry in a moment."
+            >
+              <input type="hidden" name="_subject" value="New community signal request" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
+              <label>
+                Name
+                <input type="text" name="name" autocomplete="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" autocomplete="email" required />
+              </label>
+              <fieldset>
+                <legend>Focus areas</legend>
+                <label><input type="checkbox" name="focus" value="research" /> Research</label>
+                <label><input type="checkbox" name="focus" value="philosophy" /> Philosophy</label>
+                <label><input type="checkbox" name="focus" value="art" /> Art & Design</label>
+                <label><input type="checkbox" name="focus" value="practice" /> Contemplative Practice</label>
+              </fieldset>
+              <button type="submit">Subscribe to signals</button>
+              <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container stack">
+        <h2>Featured Resources</h2>
+        <div class="resource-grid">
+          <article id="primer">
+            <p class="resource-type">Toolkit</p>
+            <h3>Consciousness Primer</h3>
+            <p>A guided syllabus for newcomers covering foundational studies and leading debates.</p>
+            <a class="link" href="resources/primer.html">Download the primer</a>
+          </article>
+          <article id="embodied-cognition">
+            <p class="resource-type">Lecture Series</p>
+            <h3>Embodied Cognition</h3>
+            <p>Ten masterclasses on how the body shapes conscious experience.</p>
+            <a class="link" href="resources/embodied-cognition.html">Watch on-demand</a>
+          </article>
+          <article id="question-exchange">
+            <p class="resource-type">Forum</p>
+            <h3>Question Exchange</h3>
+            <p>Pose questions, propose experiments, and connect with collaborators in moderated forums.</p>
+            <a class="link" href="resources/question-exchange.html">Visit the forum</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail" id="atlas">
+      <div class="container stack">
+        <p class="eyebrow">Initiative</p>
+        <h2>Open Consciousness Atlas</h2>
+        <p>
+          The Atlas aggregates theories, experiments, and methodological notes across neuroscience,
+          philosophy of mind, contemplative science, and speculative design. Each entry is peer reviewed
+          by two community editors and cross-referenced with related work.
+        </p>
+        <ul class="detail-list">
+          <li><strong>Format:</strong> Markdown entries synced to an open repository.</li>
+          <li><strong>How to contribute:</strong> Submit a pull request or share an outline via the submission form.</li>
+          <li><strong>Maintainers:</strong> Consciousness Lab, Phenomenology Guild, and invited guest editors.</li>
+        </ul>
+        <a class="button primary" href="mailto:atlas@consciousness.project">Share research materials</a>
+      </div>
+    </section>
+
+    <section class="section detail alt" id="residency">
+      <div class="container stack">
+        <p class="eyebrow">Residency</p>
+        <h2>Observatory Residency</h2>
+        <p>
+          A six-week hybrid program pairing neuroscientists with media artists to prototype new ways
+          of documenting and translating conscious experience.
+        </p>
+        <div class="detail-grid">
+          <div>
+            <h3>What fellows receive</h3>
+            <ul>
+              <li>Dedicated mentors across science and creative practices</li>
+              <li>Stipend and production budget</li>
+              <li>Access to shared lab notebooks and capture equipment</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Timeline</h3>
+            <ol>
+              <li>Applications close July 12</li>
+              <li>Interviews July 24–31</li>
+              <li>Residency runs September 2 – October 11</li>
+            </ol>
+          </div>
+        </div>
+        <a class="button secondary" href="mailto:residency@consciousness.project?subject=Residency%20Application">Start an application</a>
+      </div>
+    </section>
+
+    <section class="section detail" id="lab-notebook">
+      <div class="container stack">
+        <p class="eyebrow">Publication</p>
+        <h2>Phenomenology Lab Notebook</h2>
+        <p>
+          Structured first-person reports gathered through guided protocols. Each notebook volume explores
+          a focused question—lucidity, liminality, embodiment—and invites comparative analysis across labs.
+        </p>
+        <div class="detail-panels">
+          <article>
+            <h3>Volume 03 · Lucid Onsets</h3>
+            <p>Protocols for capturing transitions from waking to dream states with EEG and phenomenological prompts.</p>
+            <a class="link" href="resources/lab-notebook.html">Read volume</a>
+          </article>
+          <article>
+            <h3>Volume 02 · Somatic Maps</h3>
+            <p>Guided body scans translated into spatialized diagrams and sonic textures.</p>
+            <a class="link" href="assets/resources/phenomenology-lab-notebook-vol-02.md" download>Explore toolkit</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section detail alt" id="primer-detail">
+      <div class="container stack">
+        <p class="eyebrow">Resource</p>
+        <h2>Consciousness Primer Toolkit</h2>
+        <p>
+          A five-week syllabus covering foundational literature, landmark experiments, and scaffolded journal prompts.
+          Ideal for new collaborators or study groups looking for a structured on-ramp.
+        </p>
+        <ul class="detail-list">
+          <li><strong>Week 1:</strong> Pre-history and contemporary definitions</li>
+          <li><strong>Week 2:</strong> Neural correlates and global workspace debates</li>
+          <li><strong>Week 3:</strong> Phenomenology and contemplative science</li>
+          <li><strong>Week 4:</strong> Integrated information, predictive processing, and complexity</li>
+          <li><strong>Week 5:</strong> Future directions and community salon prompts</li>
+        </ul>
+        <a class="button primary" href="resources/primer.html">Access the toolkit</a>
+      </div>
+    </section>
+
+    <section class="section detail" id="embodied-cognition-detail">
+      <div class="container stack">
+        <p class="eyebrow">Resource</p>
+        <h2>Embodied Cognition Masterclasses</h2>
+        <p>
+          Ten recorded sessions featuring somatic practitioners, roboticists, and philosophers examining how bodies scaffold consciousness.
+        </p>
+        <div class="detail-grid">
+          <div>
+            <h3>Session highlights</h3>
+            <ul>
+              <li>Sensorimotor contingencies with Prof. Ana Velasquez</li>
+              <li>Enactivist robotics lab tour with Dr. Idris Yoon</li>
+              <li>Somatic experiencing for researchers with Rina Das</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Formats</h3>
+            <ol>
+              <li>HD video (English + captions)</li>
+              <li>Keynote slides and annotated transcripts</li>
+              <li>Practice prompts and lab worksheets</li>
+            </ol>
+          </div>
+        </div>
+        <a class="button secondary" href="resources/embodied-cognition.html">Explore the series</a>
+      </div>
+    </section>
+
+    <section class="section detail alt" id="question-exchange-detail">
+      <div class="container stack">
+        <p class="eyebrow">Community</p>
+        <h2>Question Exchange Forum</h2>
+        <p>
+          A moderated forum where researchers, practitioners, and artists surface questions, coordinate experiments, and share field reports.
+        </p>
+        <div class="detail-panels">
+          <article>
+            <h3>Weekly prompts</h3>
+            <p>Share short provocations or open problems, then gather asynchronously for synthesis threads.</p>
+          </article>
+          <article>
+            <h3>Lab matchmaking</h3>
+            <p>Signal what skills or equipment you can share, and discover collaborators across disciplines.</p>
+          </article>
+          <article>
+            <h3>Support channels</h3>
+            <p>Breakout rooms for integration coaches, IRB templates, and funding announcements.</p>
+          </article>
+        </div>
+        <a class="button primary" href="resources/question-exchange.html">Request a forum invite</a>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container">
+        <div class="newsletter-copy">
+          <h2>Stay in the signal</h2>
+          <p>
+            Join monthly dispatches with research highlights, creative callouts, and community opportunities.
+          </p>
+        </div>
+        <form
+          class="newsletter-form"
+          id="newsletter-form"
+          action="https://formsubmit.co/hello@consciousness.project"
+          method="POST"
+          data-endpoint="https://formsubmit.co/ajax/hello@consciousness.project"
+          data-success-message="Thanks! We just queued your first dispatch."
+          data-error-message="Something went wrong. Please try again or email hello@consciousness.project."
+        >
+          <input type="hidden" name="_subject" value="Newsletter opt-in" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label class="sr-only" for="newsletter-email">Email address</label>
+          <input id="newsletter-email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          <button type="submit">Join the newsletter</button>
+          <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> The Consciousness Project. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#community">Community</a>
+        <a href="#resources">Resources</a>
+        <a href="mailto:hello@consciousness.project">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="rsvp-modal" aria-labelledby="modal-title">
+    <form
+      id="rsvp-form"
+      method="POST"
+      data-endpoint="https://formsubmit.co/ajax/events@consciousness.project"
+      data-success-message="Invite sent. Watch your inbox."
+      data-error-message="We could not deliver your request. Please try again shortly."
+    >
+      <input type="hidden" name="_subject" value="Salon RSVP request" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="hidden" name="_captcha" value="false" />
+      <h2 id="modal-title">Request an invite</h2>
+      <p>We will reach out with details to confirm your spot.</p>
+      <label>
+        Name
+        <input type="text" name="modal-name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="modal-email" required />
+      </label>
+      <menu>
+        <button type="button" class="secondary" data-close="true">Cancel</button>
+        <button type="submit" class="primary">Send request</button>
+      </menu>
+      <p class="form-message" role="status" aria-live="polite"></p>
+    </form>
+  </dialog>
+
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
